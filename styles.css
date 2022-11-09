@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-color: #FBCC9D;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flex {
+
+}
+
+.container {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin: 40px 20px;
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  .img-item img {
+    width: 300px;
+    height: 270px;
+    object-fit: cover;
+  }
+
+  .cta {
+    margin-bottom: 25px;
+  }
+
+
+}
+
+.img-item img {
+  width: 100%;
+  display: inherit;
+}
+
+
+.description-item {
+  background-color: white;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 30px;
+}
+
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: darkgrey;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+h2 {
+  color: darkblue;
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.description-card {
+  font-family: 'Montserrat', sans-serif;
+  color: darkgrey;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+
+/* .price p {
+  display: inline-block;
+
+} */
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.new-price {
+  color: darkcyan;
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+}
+
+.previous-price {
+  padding-left: 1.7rem;
+  color: darkgrey;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+
+
+
+.cta {
+  color: white;
+  background-color: darkcyan;
+  background-color: hsl(158, 36%, 37%);
+  padding: 13px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cta img {
+  padding-right: 3px;
+}
+
+.cta:hover,
+.cta:focus {
+  background-color: darkblue;
+  background-color: #1a4031;
+}
